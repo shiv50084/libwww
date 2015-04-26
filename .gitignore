@@ -6,3 +6,4 @@ configure
 config.log
 config.status
 wwwconf.h.in
+Makefile.in
