@@ -3,21 +3,12 @@ dnl (c) COPYRIGHT MIT 1995.
 dnl Please first read the full copyright statement in the file COPYRIGH.
 dnl @(#) $Id: configure.ac,v 1.8 2006-12-03 18:12:52 vbancrof Exp $
 
-AC_REVISION([$Id: configure.ac,v 1.8 2006-12-03 18:12:52 vbancrof Exp $])
-AC_PREREQ(2.53)
-
-AC_CONFIG_SRCDIR([Library])
-
-AC_CONFIG_AUX_DIR(config)
-
-AC_CANONICAL_TARGET([])
-AC_ARG_PROGRAM
 
 dnl Initialize Automake.
 PACKAGE=w3c-libwww
 AC_SUBST(PACKAGE)
 AC_DEFINE_UNQUOTED([W3C_PACKAGE], "$PACKAGE", [Define to be the package name.])
- 
+
 VERSION=5.4.1
 AC_SUBST(VERSION)
 AC_DEFINE_UNQUOTED([W3C_VERSION], "$VERSION", [Define to be the version.])
@@ -27,6 +18,17 @@ PREVIOUS_VERSION=5.3.2
 AC_SUBST(PREVIOUS_VERSION)
 
 AC_INIT(PACKAGE, VERSION)
+
+
+AC_REVISION([$Id: configure.ac,v 1.8 2006-12-03 18:12:52 vbancrof Exp $])
+AC_PREREQ(2.53)
+
+AC_CONFIG_SRCDIR([Library])
+
+AC_CONFIG_AUX_DIR(config)
+
+AC_CANONICAL_TARGET([])
+AC_ARG_PROGRAM
 
 AM_INIT_AUTOMAKE
 
