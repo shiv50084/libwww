@@ -1,4 +1,5 @@
 *_config.h
+*_config.h.in
 .cvsignore
 .deps/
 aclocal.m4
@@ -10,6 +11,7 @@ config/compile
 CVS/
 libtool
 libwww-config
+ltmain.sh
 Makefile.in
 Makefile
 stamp-h
@@ -17,4 +19,3 @@ stamp-h1
 w3c-libwww.spec
 wwwconf.h.in
 wwwconf.h
-
