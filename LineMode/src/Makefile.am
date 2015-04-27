@@ -25,11 +25,12 @@ www_LDADD = \
 
 SUBDIRS = windows vms
 
-INCLUDES = \
+AM_CPPFLAGS = \
 	-I$(srcdir)/../../Library/src \
 	-I$(top_srcdir)/modules/expat/lib \
 	-I$(srcdir)/../../PICS-client/src
 
+AUTOMAKE_OPTIONS = -Wno-portability
 #	.h files are distributed but originally are made from the
 #	self-documenting hypertext files.
 SUFFIXES = .g .h .html

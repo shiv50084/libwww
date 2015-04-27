@@ -9,6 +9,7 @@ EXTRA_LTLIBRARIES = \
 
 SUBDIRS = windows
 
+AUTOMAKE_OPTIONS = -Wno-portability
 #	.h files are distributed but originally are made from the
 #	self-documenting hypertext files.
 SUFFIXES = .h .html .txt
@@ -44,7 +45,7 @@ libwwwssl_la_LDFLAGS = -rpath $(libdir)
 LDADD = \
 	libwwwssl.la
 
-INCLUDES = \
+AM_CPPFLAGS = \
 	-I/usr/local/include \
 	-I${top_srcdir}/modules/md5 \
 	-I${top_srcdir}/modules/expat/xmlparse \

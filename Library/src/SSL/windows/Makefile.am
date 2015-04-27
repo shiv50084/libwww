@@ -2,6 +2,7 @@
 
 SUFFIXES = .files .def
 
+AUTOMAKE_OPTIONS = -Wno-portability
 SRC := $(wildcard *.c)
 MAK := $(wildcard *.mak)
 FLS := $(wildcard *.files)

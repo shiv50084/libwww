@@ -24,10 +24,11 @@ w3c_LDADD = \
 
 SUBDIRS = windows
 
-INCLUDES = \
+AM_CPPFLAGS = \
 	-I$(srcdir)/../../Library/src \
 	-I$(top_srcdir)/modules/expat/lib
 
+AUTOMAKE_OPTIONS = -Wno-portability
 #	.h files are distributed but originally are made from the
 #	self-documenting hypertext files.
 SUFFIXES = .h .html

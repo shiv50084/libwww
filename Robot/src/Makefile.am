@@ -26,12 +26,13 @@ webbot_LDADD = \
 
 SUBDIRS = windows
 
-INCLUDES = \
+AM_CPPFLAGS = \
 	-I$(srcdir)/../../Library/src \
 	-I$(srcdir)/../../Library/src/SSL \
 	-I$(top_srcdir)/modules/expat/lib \
 	$(MYSQL_CFLAGS)
 
+AUTOMAKE_OPTIONS = -Wno-portability
 #	.h files are distributed but originally are made from the
 #	self-documenting hypertext files.
 SUFFIXES = .h .html

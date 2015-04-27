@@ -7,6 +7,7 @@ libmd5_la_SOURCES = \
 	md5.c \
 	md5.h
 
+AUTOMAKE_OPTIONS = -Wno-portability
 DOCS :=	$(wildcard *.html)
 
 EXTRA_DIST = \
