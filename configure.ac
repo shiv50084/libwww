@@ -5,7 +5,7 @@ dnl @(#) $Id: configure.ac,v 1.8 2006-12-03 18:12:52 vbancrof Exp $
 
 AC_REVISION([$Id: configure.ac,v 1.8 2006-12-03 18:12:52 vbancrof Exp $])
 AC_PREREQ(2.53)
-AC_INIT
+
 AC_CONFIG_SRCDIR([Library])
 
 AC_CONFIG_AUX_DIR(config)
@@ -26,7 +26,9 @@ AC_DEFINE_UNQUOTED([W3C_VERSION], "$VERSION", [Define to be the version.])
 PREVIOUS_VERSION=5.3.2
 AC_SUBST(PREVIOUS_VERSION)
 
-AM_INIT_AUTOMAKE($PACKAGE, $VERSION) 
+AC_INIT($PACKAGE, $VERSION)
+
+AM_INIT_AUTOMAKE
 
 AM_CONFIG_HEADER(wwwconf.h)
 
